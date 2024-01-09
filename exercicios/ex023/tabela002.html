@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TABELAS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+
+        thead, tfoot{
+            background-color: rgb(43, 43, 43);
+            color: white;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        .num{
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(odd)   /* 2n - 1 */
+        {
+            background-color: rgb(178, 232, 230);
+        }
+
+        tbody > tr:nth-child(even)  /* 2n */
+        {
+            background-color: rgb(221, 193, 198);
+        }
+
+    </style>
 </head>
 <body>
-    
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <th scope="col">Unidade Federativa</th>
+            <th scope="col" style="width: 50px;">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.433.957</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td class="num"><strong>122.037.043</strong></td>
+        </tfoot>
+    </table>
 </body>
 </html>
