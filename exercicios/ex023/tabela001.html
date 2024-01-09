@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando tabelas</title>
+
+    <style>
+
+        #fora{
+            height: 86vh;
+            position: relative;
+        }
+
+        #dentro{
+            height: 500px;
+            width: 600px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td{
+            border: 1px solid black;
+            text-align: center;   /* Alinhamento horizontal */
+            padding: 8px;
+            vertical-align: middle;   /* Alinhamento vertical */
+        }
+
+        tr.linha{
+            background-color: yellow;
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+
+    <div id="fora">
+        <div id="dentro">
+            <table>
+                <tr class="linha"> <!-- Primeira linha -->
+                    <td>A1</td>
+                    <td>B1</td>
+                    <TD>C1</TD>
+                </tr>
+
+                <tr> <!-- Segunda linha -->
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+
+                <tr class="linha"> <!-- Terceira linha -->
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
