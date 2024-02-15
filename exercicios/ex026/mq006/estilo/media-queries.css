@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* Inicia-se as configurações para telas a partir do tablet */
+@media screen and (min-width: 768px) {
+    span#burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu > ul > li{
+        display: inline-block;
+    }
+    main{
+        width: 768px;
+    }
+}
